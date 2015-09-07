@@ -1,0 +1,108 @@
+body{
+	background-image: url('../images/twinkle_twinkle.png');
+	min-height:100%;
+	font-family: 'VT323', ;
+
+}
+
+
+.main{
+	top:16vh;
+}
+
+img{
+	width: 20%;	
+	min-width: 100px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	opacity:1;
+	-webkit-filter: invert(30%);
+	filter: invert(30%);
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+}
+img:hover{
+	opacity:0.7;
+	-webkit-filter: blur(4px);
+	filter: blur(4px);
+	-webkit-filter: invert(70%);
+	filter: invert(70%);
+}
+
+h4{
+	text-align: center;
+	font-weight:200;
+	color:#00A600;
+	opacity:1;
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+}
+
+h4:hover{
+	opacity:0.7;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+}
+
+.links{
+	margin-top:5vh;
+}
+
+a{
+	text-decoration:none;
+	color:#00A600;
+	font-size:25px;
+	font-weight:200;
+}
+
+
+
+li{
+	list-style-type: none;
+	padding:10px;
+	display: inline;
+	font-size:25px;
+	font-weight:200;
+	color:#00A600;
+	opacity:1;
+	transition:all 1s ease;
+	-webkit-transition:all 1s ease;
+}
+
+li:hover{
+	list-style-type: none;
+	padding:10px;
+	display: inline;
+	font-size:25px;
+	font-weight:200;
+	color:#00A600;
+	opacity:0.7;
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	
+}
+
+
+/* super awesome blink animation !! */
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+.blinker {
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
