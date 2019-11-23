@@ -1,0 +1,73 @@
+body {
+  background: #333333;
+  color: #47d147;
+  font-family: "Press Start 2P", cursive;
+}
+
+.main-section {
+  margin-top: 15vh;
+}
+
+.logo {
+  height: 25vh;
+  width: auto;
+}
+
+.tagline {
+  line-height: 2;
+  text-align: center;
+  font-size: 14px;
+}
+.cta {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+  padding: 0;
+}
+
+.cta > li {
+  margin: auto;
+}
+
+.cta > li > a {
+  text-decoration: none;
+  color: inherit;
+  margin: auto;
+}
+
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blinker {
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-name: blinker;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
